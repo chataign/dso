@@ -22,11 +22,11 @@
 */
 
 
-#include "OptimizationBackend/EnergyFunctionalStructs.h"
-#include "OptimizationBackend/EnergyFunctional.h"
-#include "FullSystem/FullSystem.h"
-#include "FullSystem/HessianBlocks.h"
-#include "FullSystem/Residuals.h"
+#include <dso/OptimizationBackend/EnergyFunctionalStructs.h>
+#include <dso/OptimizationBackend/EnergyFunctional.h>
+#include <dso/FullSystem/FullSystem.h>
+#include <dso/FullSystem/HessianBlocks.h>
+#include <dso/FullSystem/Residuals.h>
 
 
 

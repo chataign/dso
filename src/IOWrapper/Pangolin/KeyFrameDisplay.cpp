@@ -24,7 +24,7 @@
 
 
 #include <stdio.h>
-#include "util/settings.h"
+#include <dso/util/settings.h>
 
 //#include <GL/glx.h>
 //#include <GL/gl.h>
@@ -32,9 +32,9 @@
 
 #include <pangolin/pangolin.h>
 #include "KeyFrameDisplay.h"
-#include "FullSystem/HessianBlocks.h"
-#include "FullSystem/ImmaturePoint.h"
-#include "util/FrameShell.h"
+#include <dso/FullSystem/HessianBlocks.h>
+#include <dso/FullSystem/ImmaturePoint.h>
+#include <dso/util/FrameShell.h>
 
 
 

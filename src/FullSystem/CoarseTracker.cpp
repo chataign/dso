@@ -29,11 +29,11 @@
  *      Author: engelj
  */
 
-#include "FullSystem/CoarseTracker.h"
-#include "FullSystem/FullSystem.h"
-#include "FullSystem/HessianBlocks.h"
-#include "FullSystem/Residuals.h"
-#include "OptimizationBackend/EnergyFunctionalStructs.h"
+#include <dso/FullSystem/CoarseTracker.h>
+#include <dso/FullSystem/FullSystem.h>
+#include <dso/FullSystem/HessianBlocks.h>
+#include <dso/FullSystem/Residuals.h>
+#include <dso/OptimizationBackend/EnergyFunctionalStructs.h>
 #include "IOWrapper/ImageRW.h"
 #include <algorithm>
 

@@ -29,30 +29,30 @@
  *      Author: engelj
  */
 
-#include "FullSystem/FullSystem.h"
+#include <dso/FullSystem/FullSystem.h>
  
 #include "stdio.h"
-#include "util/globalFuncs.h"
+#include <dso/util/globalFuncs.h>
 #include <Eigen/LU>
 #include <algorithm>
 #include "IOWrapper/ImageDisplay.h"
-#include "util/globalCalib.h"
+#include <dso/util/globalCalib.h>
 #include <Eigen/SVD>
 #include <Eigen/Eigenvalues>
-#include "FullSystem/PixelSelector.h"
-#include "FullSystem/PixelSelector2.h"
-#include "FullSystem/ResidualProjections.h"
-#include "FullSystem/ImmaturePoint.h"
+#include <dso/FullSystem/PixelSelector.h>
+#include <dso/FullSystem/PixelSelector2.h>
+#include <dso/FullSystem/ResidualProjections.h>
+#include <dso/FullSystem/ImmaturePoint.h>
 
-#include "FullSystem/CoarseTracker.h"
-#include "FullSystem/CoarseInitializer.h"
+#include <dso/FullSystem/CoarseTracker.h>
+#include <dso/FullSystem/CoarseInitializer.h>
 
-#include "OptimizationBackend/EnergyFunctional.h"
-#include "OptimizationBackend/EnergyFunctionalStructs.h"
+#include <dso/OptimizationBackend/EnergyFunctional.h>
+#include <dso/OptimizationBackend/EnergyFunctionalStructs.h>
 
 #include "IOWrapper/Output3DWrapper.h"
 
-#include "util/ImageAndExposure.h"
+#include <dso/util/ImageAndExposure.h>
 
 #include <cmath>
 

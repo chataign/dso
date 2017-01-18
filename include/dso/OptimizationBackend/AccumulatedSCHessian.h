@@ -25,9 +25,9 @@
 #pragma once
 
  
-#include "util/NumType.h"
-#include "util/IndexThreadReduce.h"
-#include "OptimizationBackend/MatrixAccumulators.h"
+#include <dso/util/NumType.h>
+#include <dso/util/IndexThreadReduce.h>
+#include "MatrixAccumulators.h"
 #include "vector"
 #include <math.h>
 

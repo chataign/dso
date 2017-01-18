@@ -27,8 +27,8 @@
 #include <vector>
 #include <string>
 
-#include "util/NumType.h"
-#include "util/MinimalImage.h"
+#include <dso/util/NumType.h>
+#include <dso/util/MinimalImage.h>
 #include "map"
 
 namespace cv {

@@ -25,14 +25,14 @@
 #pragma once
 
  
-#include "util/globalCalib.h"
+#include <dso/util/globalCalib.h>
 #include "vector"
  
-#include "util/NumType.h"
+#include <dso/util/NumType.h>
 #include <iostream>
 #include <fstream>
-#include "util/globalFuncs.h"
-#include "OptimizationBackend/RawResidualJacobian.h"
+#include <dso/util/globalFuncs.h>
+#include <dso/OptimizationBackend/RawResidualJacobian.h>
 
 namespace dso
 {

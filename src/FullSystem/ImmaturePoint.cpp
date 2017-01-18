@@ -23,9 +23,9 @@
 
 
 
-#include "FullSystem/ImmaturePoint.h"
-#include "util/FrameShell.h"
-#include "FullSystem/ResidualProjections.h"
+#include <dso/FullSystem/ImmaturePoint.h>
+#include <dso/util/FrameShell.h>
+#include <dso/FullSystem/ResidualProjections.h>
 
 namespace dso
 {

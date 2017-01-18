@@ -32,7 +32,7 @@
 
 #include <boost/thread.hpp>
 
-#include "util/settings.h"
+#include <dso/util/settings.h>
 
 namespace dso
 {

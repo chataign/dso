@@ -26,11 +26,11 @@
 #include "PangolinDSOViewer.h"
 #include "KeyFrameDisplay.h"
 
-#include "util/settings.h"
-#include "util/globalCalib.h"
-#include "FullSystem/HessianBlocks.h"
-#include "FullSystem/FullSystem.h"
-#include "FullSystem/ImmaturePoint.h"
+#include <dso/util/settings.h>
+#include <dso/util/globalCalib.h>
+#include <dso/FullSystem/HessianBlocks.h>
+#include <dso/FullSystem/FullSystem.h>
+#include <dso/FullSystem/ImmaturePoint.h>
 
 namespace dso
 {

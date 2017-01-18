@@ -23,20 +23,20 @@
 
 
 
-#include "FullSystem/FullSystem.h"
+#include <dso/FullSystem/FullSystem.h>
  
 #include "stdio.h"
-#include "util/globalFuncs.h"
+#include <dso/util/globalFuncs.h>
 #include <Eigen/LU>
 #include <algorithm>
 #include "IOWrapper/ImageDisplay.h"
-#include "util/globalCalib.h"
+#include <dso/util/globalCalib.h>
 #include <Eigen/SVD>
 #include <Eigen/Eigenvalues>
-#include "FullSystem/ResidualProjections.h"
+#include <dso/FullSystem/ResidualProjections.h>
 
-#include "OptimizationBackend/EnergyFunctional.h"
-#include "OptimizationBackend/EnergyFunctionalStructs.h"
+#include <dso/OptimizationBackend/EnergyFunctional.h>
+#include <dso/OptimizationBackend/EnergyFunctionalStructs.h>
 
 #include <cmath>
 

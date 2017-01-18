@@ -25,7 +25,7 @@
 #pragma once
 #include <pangolin/pangolin.h>
 #include "boost/thread.hpp"
-#include "util/MinimalImage.h"
+#include <dso/util/MinimalImage.h>
 #include "IOWrapper/Output3DWrapper.h"
 #include <map>
 #include <deque>

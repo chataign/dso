@@ -24,9 +24,9 @@
 
 #pragma once
 
-#include "util/ImageAndExposure.h"
-#include "util/MinimalImage.h"
-#include "util/NumType.h"
+#include "ImageAndExposure.h"
+#include "MinimalImage.h"
+#include "NumType.h"
 #include "Eigen/Core"
 
 

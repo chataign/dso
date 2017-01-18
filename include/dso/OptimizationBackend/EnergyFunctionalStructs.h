@@ -25,10 +25,10 @@
 #pragma once
 
  
-#include "util/NumType.h"
+#include <dso/util/NumType.h>
 #include "vector"
 #include <math.h>
-#include "OptimizationBackend/RawResidualJacobian.h"
+#include "RawResidualJacobian.h"
 
 namespace dso
 {

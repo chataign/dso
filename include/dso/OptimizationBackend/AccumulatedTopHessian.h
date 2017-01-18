@@ -25,11 +25,11 @@
 #pragma once
 
  
-#include "util/NumType.h"
-#include "OptimizationBackend/MatrixAccumulators.h"
+#include <dso/util/NumType.h>
+#include "MatrixAccumulators.h"
 #include "vector"
 #include <math.h>
-#include "util/IndexThreadReduce.h"
+#include <dso/util/IndexThreadReduce.h>
 
 
 namespace dso

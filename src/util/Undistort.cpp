@@ -30,11 +30,11 @@
 
 #include <Eigen/Core>
 #include <iterator>
-#include "util/settings.h"
-#include "util/globalFuncs.h"
+#include <dso/util/settings.h>
+#include <dso/util/globalFuncs.h>
 #include "IOWrapper/ImageDisplay.h"
 #include "IOWrapper/ImageRW.h"
-#include "util/Undistort.h"
+#include <dso/util/Undistort.h>
 
 
 namespace dso

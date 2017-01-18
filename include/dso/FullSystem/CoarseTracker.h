@@ -24,12 +24,12 @@
 
 #pragma once
 
- 
-#include "util/NumType.h"
+
+#include <dso/util/NumType.h>
 #include "vector"
 #include <math.h>
-#include "util/settings.h"
-#include "OptimizationBackend/MatrixAccumulators.h"
+#include <dso/util/settings.h>
+#include <dso/OptimizationBackend/MatrixAccumulators.h>
 #include "IOWrapper/Output3DWrapper.h"
 
 

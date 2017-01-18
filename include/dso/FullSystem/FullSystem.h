@@ -25,19 +25,19 @@
 #pragma once
 #define MAX_ACTIVE_FRAMES 100
 
-#include "util/NumType.h"
-#include "util/globalCalib.h"
+#include <dso/util/NumType.h>
+#include <dso/util/globalCalib.h>
 #include "vector"
  
 #include <iostream>
 #include <fstream>
-#include "util/NumType.h"
-#include "FullSystem/Residuals.h"
-#include "FullSystem/HessianBlocks.h"
-#include "util/FrameShell.h"
-#include "util/IndexThreadReduce.h"
-#include "OptimizationBackend/EnergyFunctional.h"
-#include "FullSystem/PixelSelector2.h"
+#include <dso/util/NumType.h>
+#include "Residuals.h"
+#include "HessianBlocks.h"
+#include <dso/util/FrameShell.h>
+#include <dso/util/IndexThreadReduce.h>
+#include <dso/OptimizationBackend/EnergyFunctional.h>
+#include "PixelSelector2.h"
 
 #include <math.h>
 

@@ -26,7 +26,7 @@
 
 #undef Success
 #include <Eigen/Core>
-#include "util/NumType.h"
+#include <dso/util/NumType.h>
 #include <pangolin/pangolin.h>
 
 #include <sstream>

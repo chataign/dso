@@ -29,7 +29,7 @@
 
 
 
-#include "FullSystem/HessianBlocks.h"
+#include <dso/FullSystem/HessianBlocks.h>
 #include "util/FrameShell.h"
 
 namespace dso

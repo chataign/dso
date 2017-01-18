@@ -22,9 +22,9 @@
 */
 
 
-#include "OptimizationBackend/AccumulatedTopHessian.h"
-#include "OptimizationBackend/EnergyFunctional.h"
-#include "OptimizationBackend/EnergyFunctionalStructs.h"
+#include <dso/OptimizationBackend/AccumulatedTopHessian.h>
+#include <dso/OptimizationBackend/EnergyFunctional.h>
+#include <dso/OptimizationBackend/EnergyFunctionalStructs.h>
 #include <iostream>
 
 namespace dso

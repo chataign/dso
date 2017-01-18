@@ -23,50 +23,41 @@
 
 
 #pragma once
+
  
-#include "util/NumType.h"
+#include <dso/util/NumType.h>
 
 namespace dso
 {
-
-enum PixelSelectorStatus {PIXSEL_VOID=0, PIXSEL_1, PIXSEL_2, PIXSEL_3};
-
-
-class FrameHessian;
-
-class PixelSelector
+struct RawResidualJacobian
 {
-public:
 	EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
-	int makeMaps(
-			const FrameHessian* const fh,
-			float* map_out, float density, int recursionsLeft=1, bool plot=false, float thFactor=1);
+	// ================== new structure: save independently =============.
+	EIGEN_ALIGN16 VecNRf resF;
 
-	PixelSelector(int w, int h);
-	~PixelSelector();
-	int currentPotential;
+	// the two rows of d[x,y]/d[xi].
+	EIGEN_ALIGN16 Vec6f Jpdxi[2];			// 2x6
+
+	// the two rows of d[x,y]/d[C].
+	EIGEN_ALIGN16 VecCf Jpdc[2];			// 2x4
+
+	// the two rows of d[x,y]/d[idepth].
+	EIGEN_ALIGN16 Vec2f Jpdd;				// 2x1
+
+	// the two columns of d[r]/d[x,y].
+	EIGEN_ALIGN16 VecNRf JIdx[2];			// 9x2
+
+	// = the two columns of d[r] / d[ab]
+	EIGEN_ALIGN16 VecNRf JabF[2];			// 9x2
 
 
-	bool allowFast;
-	void makeHists(const FrameHessian* const fh);
-private:
+	// = JIdx^T * JIdx (inner product). Only as a shorthand.
+	EIGEN_ALIGN16 Mat22f JIdx2;				// 2x2
+	// = Jab^T * JIdx (inner product). Only as a shorthand.
+	EIGEN_ALIGN16 Mat22f JabJIdx;			// 2x2
+	// = Jab^T * Jab (inner product). Only as a shorthand.
+	EIGEN_ALIGN16 Mat22f Jab2;			// 2x2
 
-	Eigen::Vector3i select(const FrameHessian* const fh,
-			float* map_out, int pot, float thFactor=1);
-
-
-	unsigned char* randomPattern;
-
-
-	int* gradHist;
-	float* ths;
-	float* thsSmoothed;
-	int thsStep;
-	const FrameHessian* gradHistFrame;
 };
-
-
-
-
 }
 

@@ -23,16 +23,16 @@
 
 
 #pragma once
-#include "util/settings.h"
-#include "util/globalFuncs.h"
-#include "util/globalCalib.h"
+#include "settings.h"
+#include "globalFuncs.h"
+#include "globalCalib.h"
 
 #include <sstream>
 #include <fstream>
 #include <dirent.h>
 #include <algorithm>
 
-#include "util/Undistort.h"
+#include "Undistort.h"
 #include "IOWrapper/ImageRW.h"
 
 #if HAS_ZIPLIB

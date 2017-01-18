@@ -24,8 +24,8 @@
 
 
 #pragma once
-#include "util/settings.h"
-#include "util/NumType.h"
+#include "settings.h"
+#include "NumType.h"
 #include "IOWrapper/ImageDisplay.h"
 #include "fstream"
 

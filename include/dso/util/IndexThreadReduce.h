@@ -24,7 +24,7 @@
 
 
 #pragma once
-#include "util/settings.h"
+#include "settings.h"
 #include "boost/thread.hpp"
 #include <stdio.h>
 #include <iostream>

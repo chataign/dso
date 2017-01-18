@@ -24,8 +24,8 @@
 
 
 #pragma once
-#include "util/NumType.h"
-#include "util/MinimalImage.h"
+#include <dso/util/NumType.h>
+#include <dso/util/MinimalImage.h>
 
 namespace dso
 {

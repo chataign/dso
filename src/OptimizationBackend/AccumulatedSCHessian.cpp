@@ -22,11 +22,11 @@
 */
 
 
-#include "OptimizationBackend/AccumulatedSCHessian.h"
-#include "OptimizationBackend/EnergyFunctional.h"
-#include "OptimizationBackend/EnergyFunctionalStructs.h"
+#include <dso/OptimizationBackend/AccumulatedSCHessian.h>
+#include <dso/OptimizationBackend/EnergyFunctional.h>
+#include <dso/OptimizationBackend/EnergyFunctionalStructs.h>
 
-#include "FullSystem/HessianBlocks.h"
+#include <dso/FullSystem/HessianBlocks.h>
 
 namespace dso
 {

@@ -23,10 +23,10 @@
 
 
  
-#include "FullSystem/HessianBlocks.h"
-#include "util/FrameShell.h"
-#include "FullSystem/ImmaturePoint.h"
-#include "OptimizationBackend/EnergyFunctionalStructs.h"
+#include <dso/FullSystem/HessianBlocks.h>
+#include <dso/util/FrameShell.h>
+#include <dso/FullSystem/ImmaturePoint.h>
+#include <dso/OptimizationBackend/EnergyFunctionalStructs.h>
 
 namespace dso
 {

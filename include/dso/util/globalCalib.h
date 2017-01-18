@@ -22,42 +22,24 @@
 */
 
 
-#pragma once
 
- 
-#include "util/NumType.h"
+#pragma once
+#include "settings.h"
+#include "NumType.h"
 
 namespace dso
 {
-struct RawResidualJacobian
-{
-	EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
-	// ================== new structure: save independently =============.
-	EIGEN_ALIGN16 VecNRf resF;
+	extern int wG[PYR_LEVELS], hG[PYR_LEVELS];
+	extern float fxG[PYR_LEVELS], fyG[PYR_LEVELS],
+		  cxG[PYR_LEVELS], cyG[PYR_LEVELS];
 
-	// the two rows of d[x,y]/d[xi].
-	EIGEN_ALIGN16 Vec6f Jpdxi[2];			// 2x6
+	extern float fxiG[PYR_LEVELS], fyiG[PYR_LEVELS],
+		  cxiG[PYR_LEVELS], cyiG[PYR_LEVELS];
 
-	// the two rows of d[x,y]/d[C].
-	EIGEN_ALIGN16 VecCf Jpdc[2];			// 2x4
+	extern Eigen::Matrix3f KG[PYR_LEVELS],KiG[PYR_LEVELS];
 
-	// the two rows of d[x,y]/d[idepth].
-	EIGEN_ALIGN16 Vec2f Jpdd;				// 2x1
+	extern float wM3G;
+	extern float hM3G;
 
-	// the two columns of d[r]/d[x,y].
-	EIGEN_ALIGN16 VecNRf JIdx[2];			// 9x2
-
-	// = the two columns of d[r] / d[ab]
-	EIGEN_ALIGN16 VecNRf JabF[2];			// 9x2
-
-
-	// = JIdx^T * JIdx (inner product). Only as a shorthand.
-	EIGEN_ALIGN16 Mat22f JIdx2;				// 2x2
-	// = Jab^T * JIdx (inner product). Only as a shorthand.
-	EIGEN_ALIGN16 Mat22f JabJIdx;			// 2x2
-	// = Jab^T * Jab (inner product). Only as a shorthand.
-	EIGEN_ALIGN16 Mat22f Jab2;			// 2x2
-
-};
+	void setGlobalCalib(int w, int h, Eigen::Matrix3f K );
 }
-

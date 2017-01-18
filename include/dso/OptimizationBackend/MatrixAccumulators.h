@@ -23,7 +23,7 @@
 
 
 #pragma once
-#include "util/NumType.h"
+#include <dso/util/NumType.h>
 
 
 namespace dso

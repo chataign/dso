@@ -41,9 +41,9 @@
 #include "util/globalCalib.h"
 
 #include "util/NumType.h"
-#include "FullSystem/FullSystem.h"
+#include <dso/FullSystem/FullSystem.h>
 #include "OptimizationBackend/MatrixAccumulators.h"
-#include "FullSystem/PixelSelector2.h"
+#include <dso/FullSystem/PixelSelector2.h>
 
 
 
